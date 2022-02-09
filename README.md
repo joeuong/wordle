@@ -11,7 +11,10 @@ I have included a sample CSV if you want to skip this step
 ## Step 2
 Run wordle.py
 
-## Bug fixes / feature adds in a future update
-- User can guess words that do not exist in the dictionary
+## Bug fixes / feature TO DO in a future update
 - User receives hints that are repeated for single letters if user enters multiple letters
 - User does not have list of used letters
+
+## Bugs Fixed and Features added
+- User can guess words that do not exist in the dictionary
+- Added solution at the end
