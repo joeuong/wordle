@@ -16,5 +16,5 @@ Run wordle.py
 - User does not have list of used letters
 
 ## Bugs Fixed and Features added
-- User can guess words that do not exist in the dictionary
+- User can no longer guess words that do not exist in the CSV dictionary
 - Added solution at the end
