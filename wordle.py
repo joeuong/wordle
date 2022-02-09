@@ -4,7 +4,7 @@ from time import sleep
 
 today = date.today()
 
-date_word_dict= {}
+date_word_dict = {}
 
 with open('wordle_py.csv') as database:
     csvreader = csv.reader(database)
@@ -43,6 +43,10 @@ while guess < 6:
         print('Word needs to be 5 Letters')
         continue
 
+    if user_guess.lower() not in date_word_dict.values():
+        print('Needs to be real word')
+        continue
+    
     if user_guess == word_1:
         print(f'Congratulations, you guessed the word on Guess #{guess}')
         break
@@ -65,4 +69,5 @@ while guess < 6:
     guess += 1
     sleep(2)
 
+print(f'The word was {word_1}.')
 print('End of Game')
